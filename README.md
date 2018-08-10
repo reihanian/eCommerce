@@ -1,2 +1,2 @@
-# eCommerce
-eCommerce Project for Java Class
+# JSFSample
+JSFSample Project
