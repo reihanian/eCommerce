@@ -1,11 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html"> 
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
 
-<h:head></h:head> 
-<body> 
-<h:inputText value="#{helloBean.message}" />
-</body> 
+<h:head></h:head>
+<body>
+
+	<h:form>
+		<h:outputLabel value="Username:" />
+		<h:inputText value="#{signupView.authentication.username}" />
+		<br />
+		<h:outputLabel value="Password:	" />
+		<h:inputSecret value="#{signupView.authentication.password}" />
+		<br />
+		<h:outputLabel value="Firstname: " />
+		<h:inputText value="#{signupView.user.firstName}" />
+		<br />
+		<h:outputLabel value="Lastname: " />
+		<h:inputText value="#{signupView.user.lastName}" />
+		<br />
+		<h:outputLabel value="Email: " />
+		<h:inputText value="#{signupView.user.email}" />
+		<br />
+
+		<h:commandButton value="Register" actionListener="#{signupView.register}" />
+		<br />
+		<h:outputLabel value="#{signupView.msg}" />
+	</h:form>
+</body>
 </html>

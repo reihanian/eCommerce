@@ -30,4 +30,9 @@ public class Authentication {
 		this.password = password;
 	}
 
+	@Override
+	public String toString() {
+		return "Authentication [id=" + id + ", username=" + username + ", password=" + password + "]";
+	}
+
 }

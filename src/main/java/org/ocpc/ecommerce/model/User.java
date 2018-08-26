@@ -39,4 +39,11 @@ public class User {
 		this.email = email;
 	}
 
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
+	}
+
+	
+	
 }
